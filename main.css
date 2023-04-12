@@ -372,12 +372,6 @@ footer > div {
     float: right;
 }
 
-#writeup {
-    padding: 15px 10px 0 10px;
-    /*background: #707070;*/
-    border-radius: 20px;
-    /*border: 1pt solid #606060;*/
-}
 p:not(:last-child) {
     margin-bottom: 10px;
 }
@@ -385,11 +379,34 @@ p:not(:last-child) {
 .section {
     padding: 10px;
     margin-top: 10px;
-    border-top: 1pt solid #F49500;
     background: #808080;
-    /*background: linear-gradient(to bottom, #404040, #606060);*/
+    border-top: 2pt solid #F49500;
+    border-radius: 25px 25px 0 0;
+    background: linear-gradient(
+            to bottom,
+            #707070,
+            /*#707070 20%,*/
+            /*#F49500,*/
+            #808080
+    );
+    /*background: linear-gradient(to right, #808080, #909090);*/
     /*display: inline-block;*/
     /*max-width: 250px;*/
+}
+
+/*.section:first-child {*/
+/*    background: yellow;*/
+/*}*/
+
+#writeup {
+    background: #808080;
+    border: none;
+}
+
+.section:nth-child(even) {
+    /*background: #707070;*/
+    border-radius: 25px 25px 10px 10px;
+    /*background: linear-gradient(to bottom, #707070, #808080);*/
 }
 
 .emphasized-text {
@@ -397,11 +414,13 @@ p:not(:last-child) {
     font-weight: 500;
 }
 
-.section p:nth-child(even) {
-    /*background: #909090;*/
-}
+/*.section p:nth-child(even) {*/
+/*    background: #909090;*/
+/*}*/
 
 #pricing-section {
+    background: #404040;
+    color: #808080;
     float: left;
     max-width: 175px;
     border: 2pt solid #F49500;
