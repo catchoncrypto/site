@@ -269,8 +269,8 @@ header span {
 
 footer {
     /*flex-shrink: 0;*/
-    background: #606060;
-    /*background: white;*/
+    /*background: #606060;*/
+    background: white;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -290,11 +290,11 @@ footer > div {
     justify-content: center;
 }
 
-#contact-container > div:first-child, #pricing-container > div:first-child {
+#pricing-container > div:first-child {
     padding-right: 10px;
 }
 
-#contact-container > div:not(:first-child), #pricing-container > div:not(:first-child) {
+#pricing-container > div:not(:first-child) {
     font-style: italic;
     /*font-weight: 500;*/
     color: #F49500;
@@ -303,6 +303,9 @@ footer > div {
 
 #contact-container * {
     font-size: 16px;
+    text-align: right;
+    font-style: italic;
+    font-weight: bold;
 }
 
 #logo {
